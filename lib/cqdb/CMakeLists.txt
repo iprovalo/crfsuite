@@ -21,11 +21,6 @@ set_target_properties(cqdb PROPERTIES
 # Adding compiler flags
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -I./include")
 
-# Assuming this is a shared library and ensuring undefined symbols are not allowed
-set_target_properties(cqdb PROPERTIES
-        LINK_FLAGS "-no-undefined"
-        )
-
 # Specify install rules (optional)
 install(TARGETS cqdb DESTINATION lib)
 install(FILES include/cqdb.h DESTINATION include)

@@ -5,6 +5,7 @@ project(CrfSuite)
 add_subdirectory(include)
 add_subdirectory(lib/cqdb)
 add_subdirectory(lib/crf)
+add_subdirectory(lib/lbfgs)
 #add_subdirectory(frontend)
 #add_subdirectory(swig)
 

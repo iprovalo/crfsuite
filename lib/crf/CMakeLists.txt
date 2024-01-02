@@ -45,15 +45,14 @@ set_target_properties(crfsuite PROPERTIES VERSION ${VERSION})
 # Compiler flags
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -I${CMAKE_SOURCE_DIR}/lib/cqdb/include")
 
-# Linker flags
-set_target_properties(crfsuite PROPERTIES
-        LINK_FLAGS "-no-undefined"
-        )
 
 # Link against libcqdb (update this path as needed)
 # Assuming libcqdb is built and findable by CMake
 find_library(CQDB_LIBRARY NAMES cqdb PATHS "${CMAKE_SOURCE_DIR}/lib/cqdb")
 target_link_libraries(crfsuite PRIVATE cqdb)
+
+find_library(LBFGS_LIBRARY NAMES lbfgs PATHS "${CMAKE_SOURCE_DIR}/lib/lbfgs")
+target_link_libraries(crfsuite PRIVATE lbfgs)
 
 # Installation rules
 install(TARGETS crfsuite DESTINATION lib)
