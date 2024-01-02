@@ -21,3 +21,4 @@ missing
 swig/Makefile.in
 Makefile.in
 config.sub
+build-ios

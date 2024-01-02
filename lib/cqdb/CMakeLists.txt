@@ -1,8 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
-project(LibCqdb)
-
-# Set the version (replace '1.0.0' with your actual version)
-set(VERSION 1.0.0)
+cmake_minimum_required(VERSION 3.1...3.14)
 
 # Include directories
 include_directories(include)
@@ -33,3 +29,4 @@ set_target_properties(cqdb PROPERTIES
 # Specify install rules (optional)
 install(TARGETS cqdb DESTINATION lib)
 install(FILES include/cqdb.h DESTINATION include)
+

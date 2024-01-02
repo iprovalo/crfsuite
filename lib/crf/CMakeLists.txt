@@ -1,5 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
-project(LibCrfsuite)
+cmake_minimum_required(VERSION 3.1...3.14)
 
 # Define the version number (update this as needed)
 set(VERSION 1.0.0)
@@ -54,7 +53,7 @@ set_target_properties(crfsuite PROPERTIES
 # Link against libcqdb (update this path as needed)
 # Assuming libcqdb is built and findable by CMake
 find_library(CQDB_LIBRARY NAMES cqdb PATHS "${CMAKE_SOURCE_DIR}/lib/cqdb")
-target_link_libraries(crfsuite ${CQDB_LIBRARY})
+target_link_libraries(crfsuite PRIVATE cqdb)
 
 # Installation rules
 install(TARGETS crfsuite DESTINATION lib)
