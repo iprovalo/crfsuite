@@ -13,7 +13,7 @@ else
 fi
 
 libtoolize --copy $FORCE 2>&1 | sed '/^You should/d' || {
-    echo "libtoolize failed!"
+    echo "glibtoolize failed!"
     exit 1
 }
 
