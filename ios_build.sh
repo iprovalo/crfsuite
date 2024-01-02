@@ -5,7 +5,7 @@ TEAM_ID="Ivan Provalov"
 
 # This will configure cmake build.  After this step, open the project in XCode and you may need to make some changes for the build time:
 #2. PROJECT LEVEL - Build Settings - Build Active Architecture Only - NO
-#3. Build crfsuite and cqdb target
+#3. Build crfsuite, cqdb, lbfgs target, headers may need to be added to the Header Search Path
 #4. Open build-os folder containing dylib in Finder
 #5. Drag and drop the dylib in XCode (Do not copy) to you target app project
 #6. Make sure these are now linked to the Target in both Binary and Embed Libraries under Build Phases of the specific target
