@@ -10,7 +10,7 @@ set(SOURCES
         )
 
 # Add library target
-add_library(cqdb ${SOURCES})
+add_library(cqdb STATIC ${SOURCES})
 
 # Set properties and compile options
 set_target_properties(cqdb PROPERTIES

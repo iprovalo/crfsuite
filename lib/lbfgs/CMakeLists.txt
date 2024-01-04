@@ -20,7 +20,7 @@ set(SOURCES
         )
 
 # Create a library target
-add_library(lbfgs ${SOURCES})
+add_library(lbfgs STATIC ${SOURCES})
 
 # Set library properties for version and soversion
 set_target_properties(lbfgs PROPERTIES VERSION ${VERSION} SOVERSION ${VERSION})
