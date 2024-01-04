@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1...3.14)
-project(CrfSuite)
+project(crfsuite)
 
 # Add subdirectories
 add_subdirectory(include)
